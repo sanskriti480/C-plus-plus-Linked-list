@@ -134,6 +134,63 @@ Copy code
 
 ---
 
+## Algorithms
+---
+
+### Program 1
+
+1. Start.
+2. Define a Node class with:
+   - An integer data member val.
+   - A pointer next to the next node.
+   - A constructor to initialize val and set next = NULL.
+3. In main(), dynamically create a new node with value 20.
+4. Print the node’s value and its next pointer (should be NULL).
+5. End.
+
+### Program 2
+
+1. Start.
+2. Define a Node class with:
+   - val for data.
+   - next for the pointer.
+3. In main(), dynamically create 3 nodes (n1, n2, n3) with values 11, 04, and 6.
+4. Link them together:
+   - n1->next = n2
+   - n2->next = n3
+   - n3->next = NULL (default).
+5. Create a pointer temp pointing to the head (n1).
+6. Traverse the list:
+   - While temp != NULL:
+      - Print temp->val.
+      - Move temp = temp->next.
+7. End.
+
+### Program 3
+
+1. Start.
+2. Define a Link class with:
+   - Integer data.
+   - Pointer next.
+   - Constructor to initialize data and set next = NULL.
+3. Define function insert_head(head, data):
+   - Create a new node with the given data.
+   - Set new_node->next = head.
+   - Update head = new_node.
+4. Define function disp(head):
+   - Initialize temp = head.
+   - While temp != NULL:
+      - Print temp->data.
+      - Move temp = temp->next.
+   - Print "NULL".
+5. In main():
+   - Initialize head = NULL.
+   - Call insert_head() with values 30, 32, 35.
+   - After each insertion, call disp(head) to display the list.
+7. End.
+
+---
+
 ## Concepts Used
 - **Pointers** (to connect nodes dynamically).
 - **Dynamic Memory Allocation** (using `new` in C++).
