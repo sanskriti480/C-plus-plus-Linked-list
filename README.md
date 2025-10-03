@@ -48,24 +48,6 @@ To study and implement linked list data structures in C++ by performing:
 
 ---
 
-### Block Representation of a Node
----
-
-+-----------+-----------+
-| Data | Next |
-+-----------+-----------+
-
-makefile
-Copy code
-
-**Example**:
-Head → [11 | next] → [4 | next] → [6 | NULL]
-
-yaml
-Copy code
-
----
-
 ### Types of Linked Lists
 
 #### 1. Singly Linked List
